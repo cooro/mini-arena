@@ -1,13 +1,14 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://sprites/player.png" type="Texture" id=1]
-[ext_resource path="res://Player.gd" type="Script" id=2]
+[ext_resource path="res://sprites/dagger.png" type="Texture" id=1]
+[ext_resource path="res://Dagger.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 4, 4 )
 
-[node name="Player" type="KinematicBody2D"]
-collision_mask = 6
+[node name="Dagger" type="Area2D"]
+collision_layer = 4
+collision_mask = 5
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
